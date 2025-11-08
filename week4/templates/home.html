@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block content %}
+<h2>歡迎光臨，請輸入信箱密碼</h2>
+<section>
+  <h3>登入系統</h3>
+  <form id="login-form" method="post" action="/login">
+    <div>
+      <label>信箱</label>
+      <input type="email" name="email" />
+    </div>
+    <div>
+      <label>密碼</label>
+      <input type="password" name="password" />
+    </div>
+    <div>
+      <label><input type="checkbox" name="agree" id="agree" />同意條款</label>
+    </div>
+    <button type="submit" id="login-submit">登入</button>
+  </form>
+</section>
+<hr />
+<section>
+  <h3>取得旅館資訊</h3>
+  <form id="hotel-form">
+    <div>
+      <label>編號</label>
+      <input type="text" id="hotel-id" />
+    </div>
+    <button type="submit" id="hotel-btn">取得</button>
+  </form>
+</section>
+{% endblock %}

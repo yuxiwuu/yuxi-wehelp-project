@@ -1,0 +1,11 @@
+{% extends "base.html" %} {% block content %}
+<h2>旅館的資訊</h2>
+{% if hotel %}
+<p style="text-align: center; margin-top: 1rem">
+  {{ hotel.cname }}、{{ hotel.ename }}、{{ hotel.phone }}
+</p>
+{% else %}
+<p style="text-align: center; margin-top: 1rem">查詢不到相關資料</p>
+{% endif %}
+<p style="text-align: center; margin-top: 1rem"><a href="/">返回首頁</a></p>
+{% endblock %}
