@@ -5,13 +5,14 @@
 - Tables:
   - `member`
   - `message`
- 
+
 ## Task 2 – 建立資料庫與資料表
 
 ### 2.1 建立資料庫
 ```sql
 CREATE DATABASE website;
 USE website;
+```
 
 ### 2.2 建立 member 資料表
 CREATE TABLE member(
