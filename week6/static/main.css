@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body main p {
+  text-align: center;
+  margin: 1rem;
+}
+body main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #182f53;
+  padding: 1rem;
+}
+body main .message_section {
+  text-align: center;
+}
+body main .message_section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+body main .message_section li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0;
+}
+body main .message_section form {
+  margin: 0;
+  display: inline;
+}
+body main .message_section .delete_btn {
+  padding: 2px 6px;
+  margin-top: 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+body main .general {
+  margin: 1.5rem;
+}
+body main .general h3 {
+  text-align: center;
+}
+body main .general button {
+  margin-top: 10px;
+  padding: 2px 10px;
+}
+body main .general form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main .general form div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+body main .general form div label {
+  font-size: 15px;
+}
+body main .general form div input {
+  margin: 0rem 0.5rem;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block content %}
+<h2>歡迎光臨，請註冊登入系統</h2>
+<section class="general">
+  <h3>註冊帳號</h3>
+  <form action="/signup" method="post" id="signup_form">
+    <div>
+      <label>姓名</label>
+      <input type="text" name="name" required />
+    </div>
+    <div>
+      <label>信箱</label>
+      <input type="email" name="email" required />
+    </div>
+    <div>
+      <label>密碼</label>
+      <input type="password" name="password" required />
+    </div>
+    <button type="submit" id="signup_submit">註冊</button>
+  </form>
+</section>
+<hr />
+<section class="general">
+  <h3>登入系統</h3>
+  <form action="" id="login_form">
+    <div>
+      <label>信箱</label>
+      <input type="email" name="email" required />
+    </div>
+    <div>
+      <label>密碼</label>
+      <input type="password" name="password" required />
+    </div>
+    <button type="submit" id="login-submit">登入</button>
+  </form>
+</section>
+{% endblock %}

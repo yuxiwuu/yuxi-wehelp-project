@@ -1,0 +1,44 @@
+{% extends "base.html" %} {% block content %}
+<h2>歡迎光臨，這是會員頁</h2>
+<p>{{ name }}，歡迎登入系統</p>
+<p>
+  <a href="/logout">登出系統</a>
+</p>
+<hr />
+<section class="general">
+  <h3>快來留言吧</h3>
+  <form id="message_form" action="/createMessage" method="post">
+    <div>
+      <label>留言</label>
+      <input type="text" id="message_content" name="content" requireds />
+    </div>
+    <button type="submit" id="message_btn">送出</button>
+  </form>
+</section>
+<hr />
+<section class="message_section">
+  {% if messages %}
+  <ul>
+    {% for msg in messages %}
+    <li>
+      <strong>{{ msg.name }}</strong>:{{ msg.content }} {% if msg.member_id ==
+      user_id %}
+      <form
+        action="/deleteMessage"
+        method="post"
+        style="display: inline"
+        class="delete_form"
+      >
+        <button type="button" class="delete_btn" data-id="{{ msg.id }}">
+          X
+        </button>
+      </form>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>目前沒有留言</p>
+  {% endif %}
+</section>
+{% endblock %}
