@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block content %}
+<h2>歡迎光臨，這是會員頁</h2>
+<p><span id="welcome_name">{{ name }}</span>，歡迎登入系統</p>
+<p>
+  <a href="/logout">登出系統</a>
+</p>
+<hr />
+<section>
+  <h3>查詢會員姓名</h3>
+  <div>
+    <input type="text" id="search_id" requireds />
+    <button id="search_btn">查詢</button>
+  </div>
+  <div id="searchResult"></div>
+</section>
+<section>
+  <h3>更新我的姓名</h3>
+  <div>
+    <input type="text" id="update_name" requireds />
+    <button id="update_btn">更新</button>
+  </div>
+  <div id="updateMsg"></div>
+</section>
+<section>
+  <h3>誰查詢了我</h3>
+  <div>
+    <button id="renew_btn">更新</button>
+  </div>
+  <div id="searchedResault"></div>
+</section>
+{% endblock %}

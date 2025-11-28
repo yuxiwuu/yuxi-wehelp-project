@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body main p {
+  text-align: center;
+  margin: 1rem;
+}
+body main h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background-color: #182f53;
+  padding: 1rem;
+}
+body main section {
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+body main section h3 {
+  text-align: center;
+}
+body main section div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 6px;
+  margin: 0rem 0.5rem;
+}
+body main section div input {
+  margin: 0rem 0.5rem;
+}
+body main section div #search_btn {
+  padding: 2px 8px;
+}
+body main section button {
+  margin: 10px 0px;
+  padding: 2px 8px;
+}
+body main section form {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section form div {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+body main section form div label {
+  font-size: 15px;
+}
+body main section form div input {
+  margin: 0rem 0.5rem;
+}
+body main section div {
+  display: block;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */
